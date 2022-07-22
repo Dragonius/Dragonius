@@ -11,7 +11,7 @@
 - 💬 Ask me about Anything you want~
 - 📫 Reach me: [email](mailto:anzhihe@foxmail.com)
 -->
-- 👏 Follow Me If You May: [![](https://img.shields.io/github/followers/Dragonius?label=follow%20me&style=social)](https://github.com/Dragonius/)
+- 👏 Follow Me If You May: ![](https://img.shields.io/github/followers/Dragonius?label=follow%20me&style=social)](https://github.com/Dragonius/)
 - 🎣 Fun fact: More isn't More than Less is Less
 
 </td>
