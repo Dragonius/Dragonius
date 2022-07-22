@@ -1,9 +1,20 @@
 ### Hi there 👋
 
+🏆 **my github stats:**
 
+<table>
+<tr>
+<td valign="top"  width="58%">
+  
+  ![](https://github-readme-stats.vercel.app/api?username=Dragonius)
+  
+  <br>
 
-[Contributions](https://https://raw.githubusercontent.com/Dragonius/Dragonius/main/assets/github-contribution-grid-snake.svg)
+#### 🐍 [Contributions](https://https://raw.githubusercontent.com/Dragonius/Dragonius/main/assets/github-contribution-grid-snake.svg)
 ![](https://raw.githubusercontent.com/Dragonius/Dragonius/main/assets/github-contribution-grid-snake.svg)
+</td>
+</tr>
+</table>  
 <!--
 **Dragonius/Dragonius** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
