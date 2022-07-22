@@ -2,7 +2,7 @@
 
 
 
-https://raw.githubusercontent.com/Dragonius/Dragonius/main/assets/github-contribution-grid-snake.svg
+[Contributions](https://https://raw.githubusercontent.com/Dragonius/Dragonius/main/assets/github-contribution-grid-snake.svg)
 
 <!--
 **Dragonius/Dragonius** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
