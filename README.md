@@ -4,12 +4,13 @@
 <table>
 <tr>
 <td width="58%">
-  <!--
-- 🤖 I’m currently a SRE working in Beijing, China.
-- 👨‍💻 I’m currently learning Golang，Python，Devops，Cloud Native，JS & TS、Vue、React，etc...
-- ✍️ [MyBlog](https://chegva.com)
-- 💬 Ask me about Anything you want~
-- 📫 Reach me: [email](mailto:anzhihe@foxmail.com)
+
+- 🤖 I’m currently in Finland Looking for new oportunities
+- 👨‍💻 I’m currently learning Python, Php, Sql, Linux admistration, Docker and more...
+- 💬 There are always room for questions 
+<!--
+- ✍️ 
+- 📫 Reach me: 
 -->
 - 👏 Follow Me If You May: [![](https://img.shields.io/github/followers/Dragonius?label=follow%20me&style=social)](https://github.com/Dragonius/)
 - 🎣 Fun fact: More isn't More than Less is Less
