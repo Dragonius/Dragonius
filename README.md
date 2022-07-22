@@ -15,7 +15,10 @@
 - 🎣 Fun fact: More isn't More than Less is Less
 
 </td>
-<td width="42%">
+  </tr>
+  </table>
+  <table>
+  <tr>
 
 🏆 **my github stats:**
 
