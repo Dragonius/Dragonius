@@ -3,7 +3,7 @@
 
 <table>
 <tr>
-<td width="58%">
+<td width="100%">
 
 - 🤖 I’m currently in Finland Looking for new oportunities
 - 👨‍💻 I’m currently learning Python, Php, Sql, Linux admistration, Docker and more...
