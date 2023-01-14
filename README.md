@@ -32,8 +32,8 @@
   
   <br>
 
-#### 🐍 [Contributions](https://raw.githubusercontent.com/Dragonius/Dragonius/main/assets/github-contribution-grid-snake.svg)
-![]((https://github.com/Dragonius/Dragonius/blob/snake/github-contribution-grid-snake.svg))
+#### 🐍 [Contributions][(https://raw.githubusercontent.com/Dragonius/Dragonius/main/assets/github-contribution-grid-snake.svg)
+![](https://github.com/Dragonius/Dragonius/blob/snake/github-contribution-grid-snake.svg)
 </td>
 <td valign="top"  width="42%">
   
