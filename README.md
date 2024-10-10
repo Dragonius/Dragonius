@@ -44,7 +44,7 @@
 
 <br>
 
- ** Streaks **
+ **Streaks**
 <table>
   <tr>
     <td valign="top"  width="100%">
