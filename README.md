@@ -43,11 +43,10 @@
  **Streaks**
 <table>
   <tr>
-    <td valign="top"  width="100%">
+  <td valign="top"  width="100%">
 
-     ![Anzhihe's Most used languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Dragonius&layout=compact&hide_border=true&langs_count=10)
-    <img src="https://streak-stats.demolab.com?user=Dragonius&theme=gotham&background=FFFFFF&ring=13FF4C&fire=FF0000&border=000000&stroke=FF0000&currStreakNum=FF0000&sideNums=FF0000&sideLabels=006000&currStreakLabel=006000&dates=00C000" alt="GitHub Streak" /></a>
-    </td>
+  [![GitHub Streak](https://streak-stats.demolab.com?user=Dragonius&theme=gotham&background=FFFFFF&ring=13FF4C&fire=FF0000&border=000000&stroke=FF0000&currStreakNum=FF0000&sideNums=FF0000&sideLabels=006000&currStreakLabel=006000&dates=00C000)](https://git.io/streak-stats)
+  </td>
   </tr>
 </table>
 
