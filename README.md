@@ -21,7 +21,7 @@
       
   ![[trophy]](https://github-profile-trophy.vercel.app/?username=Dragonius)
   
-</td>
+    </td>
 
     <td>
       
