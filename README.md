@@ -44,8 +44,7 @@
   
   ![Anzhihe's Most used languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Dragonius&layout=compact&hide_border=true&langs_count=10)
   
-  </td>
-  <td>
+  <br>
 
   **Streaks**
 
