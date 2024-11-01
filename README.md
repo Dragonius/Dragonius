@@ -5,7 +5,7 @@
 <tr>
 <td width="100%">
 
-- 🤖 I’m currently in Finland Looking for new oportunities
+- 🤖 I’m currently in Finland, looking for new opportunities.
 - 👨‍💻 I’m currently learning Python, PHP, SQL, Linux/Windows administration, Docker, and more...
 - 💬 There is always room for questions.
 - 👏 Follow Me If You May: [![](https://img.shields.io/github/followers/Dragonius?label=follow%20me&style=social)](https://github.com/Dragonius/)
