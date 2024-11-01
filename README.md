@@ -9,7 +9,8 @@
 - 👨‍💻 I’m currently learning Python, PHP, SQL, Linux/Windows administration, Docker, and more...
 - 💬 There is always room for questions.
 - 👏 Follow Me If You May: [![](https://img.shields.io/github/followers/Dragonius?label=follow%20me&style=social)](https://github.com/Dragonius/)
-- 🎣 Fun fact: More isn't More than Less is Less
+- ⚡ Fun fact: More isn't More than Less is Less
+- 🎣 I like music from classical to hard trance. Currently, rock and trance music are on my list.
 
 </td>
   </tr>
