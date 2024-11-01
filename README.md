@@ -18,7 +18,7 @@
   </table>
 <table>
   <tr>
-  <td>
+  <td width="100%">
 
   **Trophy**
 
