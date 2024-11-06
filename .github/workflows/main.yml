@@ -2,7 +2,7 @@ name: Generate_Snake_gif_and_svg
 
 on:
   schedule:
-     - cron: "0 * * * 1"
+     - cron: "0 3 * * *"
  
   # allows to manually run the job at any time
   workflow_dispatch:
