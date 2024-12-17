@@ -5,12 +5,16 @@
 <tr>
 <td width="100%">
 
-- 🤖 I’m currently in Finland, looking for new opportunities.
-- 👨‍💻 I’m currently learning Python, PHP, SQL, Linux/Windows administration, Docker, and more...
-- 💬 There is always room for questions.
-- 👏 Follow Me If You May: [![](https://img.shields.io/github/followers/Dragonius?label=follow%20me&style=social)](https://github.com/Dragonius/)
-- ⚡ Fun fact: More isn't More than Less is Less
-- 🎣 I like music from classical to hard trance. Currently, rock and trance music are on my list.
+🤖 I’m currently in Finland, studying engineering at JAMK while exploring new opportunities.
+👨‍💻 I’m learning Python, PHP, SQL, Linux/Windows administration, and Docker.
+💬 Feel free to ask questions—there’s no such thing as a bad question!
+👏 Follow me: [![](https://img.shields.io/github/followers/Dragonius?label=follow%20me&style=social)](https://github.com/Dragonius/)
+⚡ Fun fact: "Write less, automate more."
+🎵 I enjoy a wide range of music, from classical to hard trance. Lately, I’ve been listening to rock and trance.
+📫 How to reach me: Submit a pull request, and I’ll get in touch with you.
+🌱 Currently exploring: Lua, Next.js, and PHP 8.2+
+🔭 Working on: Designing DCS campaigns and missions.
+
 
 </td>
   </tr>
