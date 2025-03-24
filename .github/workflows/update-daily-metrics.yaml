@@ -17,8 +17,8 @@ jobs:
 
           template: classic
           repositories_affiliations: ''
-          commits_authoring: Nixinova
-          config_timezone: Pacific/Auckland # NZT
+          commits_authoring: Dragonius
+          config_timezone: Europe/Helsinki
 
           plugin_lines: yes
           plugin_traffic: yes
