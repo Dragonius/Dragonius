@@ -1,76 +1,66 @@
-name: daily-metrics
-
+name: Metrics
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: "0 0 * * *"
+  schedule: 
+    - cron: "0 18 * * 0"
+  workflow_dispatch: # enabled
 
-jobs:   
-  stats:
+jobs:
+  github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@v3.34
+      - uses: lowlighter/metrics@master
         with:
-          # You'll need to setup a personal token in your secrets.
-          token: ${{ secrets.METRIC_STATICS }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
+
+          token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_branch: github-metrics
-          committer_message: "build: update `${filename}`"
+          committer_branch: metrics
 
-          # Options
-          user: Dragonius
           template: classic
-          base: header, activity, community
+          repositories_affiliations: ''
+          commits_authoring: Nixinova
+          config_timezone: Pacific/Auckland # NZT
 
-  language:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@v3.34
-        with:
-          # You'll need to setup a personal token in your secrets.
-          token: ${{ secrets.METRIC_STATICS }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_branch: github-metrics
-          committer_message: "build: update `${filename}`"
+          plugin_lines: yes
+          plugin_traffic: yes
 
-          # Options
-          user: Dragonius
-          template: classic
-          base: ""
-          config_display: large
-          config_output: svg
-          filename: language.svg
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_followup_sections: repositories, user
 
-          # Language plugin
-          plugin_languages: true
-          plugin_languages_indepth: true
-          plugin_languages_limit: 16
-          plugin_languages_analysis_timeout: 60
-          plugin_languages_analysis_timeout_repositories: 15
+          plugin_discussions: yes
+
+          plugin_languages: yes
+          plugin_languages_details: percentage, lines
           plugin_languages_sections: most-used, recently-used
-          plugin_languages_details: percentage
-          plugin_languages_recent_load: 1000
-          plugin_languages_recent_days: 365
+          plugin_languages_categories: programming
+          plugin_languages_recent_categories: programming, markup
+          plugin_languages_ignored: HTML, CSS, Less, EJS, Nunjucks
+          plugin_languages_other: true
+          #plugin_languages_indepth: yes # broken
 
-  wakatime:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@v3.34
-        with:
-          # You'll need to setup a personal token in your secrets.
-          token: ${{ secrets.METRIC_STATICS }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_branch: github-metrics
-          committer_message: "build: update `${filename}`"
-          filename: wakatime.svg
-          
+          plugin_gists: yes
+
+          plugin_topics: yes
+          plugin_topics_sort: stars
+          plugin_topics_mode: mastered
+          plugin_topics_limit: 0 # disable
+
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+  
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_visibility: public
+          plugin_activity_timestamps: yes
+
+          plugin_code: yes
+
+          plugin_reactions: yes
+          plugin_reactions_details: count
+          plugin_reactions_limit: 200
+
           plugin_wakatime: yes
-          plugin_wakatime_sections: time, languages, languages-graphs, editors, editors-graphs, os, os-graphs
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-          plugin_wakatime_days: 365
+          plugin_wakatime_days: 14
+          plugin_wakatime_limit: 4
+          plugin_wakatime_repositories_visibility: public
