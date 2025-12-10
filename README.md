@@ -28,7 +28,6 @@
   **Trophy**
 
   ![[trophy]](https://github-profile-trophy-roan.vercel.app/?username=Dragonius)
-
   </td>
   </tr>
 </table>
