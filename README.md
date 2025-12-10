@@ -1,4 +1,4 @@
-### Hi there 👋
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=000000&width=435&lines=Hello+there+%F0%9F%91%8B;Keep+coding+and+getting+better%F0%9F%9B%A0%EF%B8%8F%F0%9F%A7%A0;You+can+do+it+even+on+the+tough+days%F0%9F%91%8A)](https://git.io/typing-svg)
 
 
 <table>
