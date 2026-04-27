@@ -20,7 +20,7 @@ jobs:
       with:
         username: ${{ github.repository_owner }}
         outputs: |
-          dist/trophy.svg
+          assets/trophy.svg
         token: ${{ secrets.GITHUB_TOKEN }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -38,6 +38,6 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v3.1.0
       with:
         target_branch: snake
-        build_dir: dist
+        build_dir: assets
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
