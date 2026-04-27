@@ -21,14 +21,6 @@ jobs:
         output_path: ./trophy.svg
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Test Action
-      id: trophy
-      uses: ./.
-      with:
-          username: ${{ github.repository_owner }}
-          output_path: ./trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Verify SVG generated
       run: |
           if [ -f trophy.svg ]; then
