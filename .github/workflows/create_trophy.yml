@@ -22,8 +22,7 @@ jobs:
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: ${{ github.repository_owner }}
-          output_path: |
-            dist/trophy.svg
+          output_path: trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
         
       # push the content of <build_dir> to a branch
