@@ -24,8 +24,7 @@ jobs:
           username: ${{ github.repository_owner }}
           output_path: |
             dist/trophy.svg
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
         
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
