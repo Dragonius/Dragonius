@@ -13,30 +13,30 @@ on:
 jobs:
   create-trophy:
     runs-on: ubuntu-latest
-    steps:     
+    steps:
+
+    - uses: actions/checkout@v4
+
     - name: Generate trophy
       id: generate-trophy
       uses: Erik-Donath/github-profile-trophy@feature/generate-svg
       with:
         username: ${{ github.repository_owner }}
-        outputs: |
-          trophy.svg
-        token: ${{ secrets.GITHUB_TOKEN }}
+        outputs: trophy.svg
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Verify SVG generated
-      run: |
-          if [ -f trophy.svg ]; then
-            echo "SVG exsists ($(wc -c < trophy.svg) Bytes)"
-            file trophy.svg
-          else
-            echo "SVG failed to generate"
-            exit 1
-          fi
     - name: Debug workspace
       run: |
-        echo "Current dir:"
         pwd
-        echo "All files:"
         find . -type f
+
+    - name: Verify SVG generated
+      run: |
+        if [ -f trophy.svg ]; then
+          echo "SVG exists ($(wc -c < trophy.svg) Bytes)"
+          file trophy.svg
+        else
+          echo "SVG failed to generate"
+          exit 1
+        fi
