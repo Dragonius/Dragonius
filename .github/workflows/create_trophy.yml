@@ -47,9 +47,13 @@ jobs:
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
     
-        # Create/switch to snake branch
         git fetch origin
-        git checkout snake || git checkout -b snake
+    
+        if git show-ref --verify --quiet refs/heads/snake; then
+          git checkout snake
+        else
+          git checkout -b snake
+        fi
     
         git add trophy.svg
         git commit -m "Update trophy.svg" || echo "No changes"
