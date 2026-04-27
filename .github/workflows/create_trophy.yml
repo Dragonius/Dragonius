@@ -41,19 +41,6 @@ jobs:
           echo "SVG failed to generate"
           exit 1
         fi
-        
-    - name: Push SVG to snake branch
-      run: |
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-    
-        git fetch origin
-    
-        if git show-ref --verify --quiet refs/heads/snake; then
-          git checkout snake
-        else
-          git checkout -b snake
-        fi
     
         git add trophy.svg
         git commit -m "Update trophy.svg" || echo "No changes"
