@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate trophy
+      - name: Generate_trophy
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
-          username: ${{ github.repository_owner }}
+          username: Dragonius
           output_path: trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
         
