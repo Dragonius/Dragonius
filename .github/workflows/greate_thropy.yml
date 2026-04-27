@@ -1,1 +1,26 @@
+name: Generate_thropy
 
+on:
+  schedule:
+     - cron: "0 3 * * *"
+ 
+  # allows to manually run the job at any time
+  workflow_dispatch:
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - main
+    
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate trophy
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        with:
+          username: ${{ github.repository_owner }}
+          output_path: trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
