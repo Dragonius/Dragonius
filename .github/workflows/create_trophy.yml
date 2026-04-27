@@ -51,9 +51,6 @@ jobs:
         git fetch origin
         git checkout snake || git checkout -b snake
     
-        # Copy the generated file
-        cp trophy.svg trophy.svg
-    
         git add trophy.svg
         git commit -m "Update trophy.svg" || echo "No changes"
         git push origin snake
