@@ -1,36 +1,50 @@
 name: create_trophy
-
 on:
   schedule:
      - cron: "0 3 * * *"
- 
   # allows to manually run the job at any time
   workflow_dispatch:
   
   # run on every push on the master branch
   push:
-    branches:
+    branches: main
+
+jobs:
+  create-trophy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout this repo
+      uses: actions/checkout@v4
+      
+    - name: Generate trophy
+      uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+      with:
+        username: ${{ github.repository_owner }}
+        output_path: ./trophy.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Test Action
+      id: trophy
+      uses: ./.
+      with:
+          username: ${{ github.repository_owner }}
+          output_path: ./trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Verify SVG generated
+      run: |
+          if [ -f trophy.svg ]; then
+            echo "SVG exsists ($(wc -c < trophy.svg) Bytes)"
+            file trophy.svg
+          else
+            echo "SVG failed to generate"
+            exit 1
+          fi
+
+
+
+ 
+
     - main
     
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Generate_trophy
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
-        with:
-          username: Dragonius
-          output_path: trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-        
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-     # - name: trophy.svg  #to the output branch
-       # uses: crazy-max/ghaction-github-pages@v3.1.0
-       # with:
-       #   target_branch: snake
-       #   build_dir: assets
-        #env:
-          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
