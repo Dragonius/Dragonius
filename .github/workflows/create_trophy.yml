@@ -22,7 +22,7 @@ jobs:
       uses: Erik-Donath/github-profile-trophy@feature/generate-svg
       with:
         username: ${{ github.repository_owner }}
-        outputs: trophy.svg
+        file: trophy.svg
         token: ${{ secrets.GITHUB_TOKEN }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
