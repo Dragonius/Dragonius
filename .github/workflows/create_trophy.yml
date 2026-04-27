@@ -42,16 +42,18 @@ jobs:
           exit 1
         fi
         
-    - name: Commit and push SVG
+    - name: Push SVG to snake branch
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
     
+        # Create/switch to snake branch
+        git fetch origin
+        git checkout snake || git checkout -b snake
+    
+        # Copy the generated file
+        cp trophy.svg trophy.svg
+    
         git add trophy.svg
-        git commit -m "Update trophy.svg" || echo "No changes to commit"
-        git push
-        
-    - uses: actions/upload-artifact@v4
-      with:
-        name: trophy
-        path: trophy.svg
+        git commit -m "Update trophy.svg" || echo "No changes"
+        git push origin snake
