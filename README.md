@@ -27,7 +27,7 @@
 
   **Trophy**
 
-  ![[trophy]](https://github-profile-trophy-roan.vercel.app/?username=Dragonius)
+  ![[trophy]https://github.com/Dragonius/Dragonius/blob/snake/trophy.svg))
   </td>
   </tr>
 </table>
