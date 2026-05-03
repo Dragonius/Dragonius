@@ -27,7 +27,7 @@
 
   **Trophy**
 
-  ![trophy](https://github.com/Dragonius/Dragonius/blob/snake/trophy.svg)
+  ![trophy](https://github.com/Dragonius/Dragonius/blob/trophy/trophy.svg)
   </td>
   </tr>
 </table>
