@@ -34,9 +34,9 @@ jobs:
 
     - name: Verify SVG generated
       run: |
-        if [ -f trophy.svg ]; then
-          echo "SVG exists ($(wc -c < trophy.svg) Bytes)"
-          file trophy.svg
+        if [ -f dist/trophy.svg ]; then
+          echo "SVG exists ($(wc -c < dist/trophy.svg) Bytes)"
+          file dist/trophy.svg
         else
           echo "SVG failed to generate"
           exit 1
