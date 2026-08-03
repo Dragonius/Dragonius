@@ -15,13 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - uses: actions/checkout@v4
+    - name: Checkout this repo
+      uses: actions/checkout@v4
 
     - name: Generate trophy
-      uses: ryo-ma/github-profile-trophy@feature/generate-svg
+      id: trophy
+      uses: Erik-Donath/github-profile-trophy@feature/generate-svg
       with:
-        username: Dragonius
-        file: dist/trophy.svg
+        username: ${{ github.repository_owner }}
+        output_path: ./trophy.svg
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Debug workspace
