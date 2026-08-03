@@ -18,14 +18,11 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Generate trophy
-      id: generate-trophy
       uses: Erik-Donath/github-profile-trophy@feature/generate-svg
       with:
-        username: ${{ github.repository_owner }}
+        username: Dragonius
         file: dist/trophy.svg
         token: ${{ secrets.GITHUB_TOKEN }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Debug workspace
       run: |
