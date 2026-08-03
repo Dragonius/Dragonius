@@ -2,13 +2,14 @@ name: create_trophy
 on:
   schedule:
      - cron: "0 3 * * *"
-  # allows to manually run the job at any time
   workflow_dispatch:
-  
-  # run on every push on the master branch
   push:
     branches:
     - main
+
+# Lisätään tarvittavat oikeudet tokenille tiedostojen kirjoitusta varten
+permissions:
+  contents: write
 
 jobs:
   create-trophy:
@@ -17,24 +18,14 @@ jobs:
 
     - uses: actions/checkout@v5
 
-    #- name: Generate trophy
-    #  id: generate-trophy
-  #    uses: Erik-Donath/github-profile-trophy@feature/generate-svg
-  #    with:
-#        username: ${{ github.repository_owner }}
-#        file: dist/trophy.svg
-#        token: ${{ secrets.GITHUB_TOKEN }}
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Generate trophy
       uses: Erik-Donath/github-profile-trophy@feature/generate-svg
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         username: Dragonius
         file: dist/trophy.svg
-        token: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        # Siirretty token oikeaan paikkaan env-osion alle
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Debug workspace
       run: |
@@ -51,11 +42,10 @@ jobs:
           exit 1
         fi
 
-    - name: push_github-contribution-trophy.svg # to the output branch
+    - name: push_github-contribution-trophy.svg
       uses: crazy-max/ghaction-github-pages@v3.1.0
       with:
         target_branch: trophy
         build_dir: dist
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
