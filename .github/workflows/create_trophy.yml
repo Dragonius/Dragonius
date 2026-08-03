@@ -25,6 +25,7 @@ jobs:
         file: dist/trophy.svg
       env:
         # Siirretty token oikeaan paikkaan env-osion alle
+        GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Debug workspace
