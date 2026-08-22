@@ -38,7 +38,7 @@
 
 <td valign="top"  width="58%">
   
-  ![](https://github-readme-stats-sigma-five.vercel.app/api?username=Dragonius)
+  ![](https://github-stats-extended.vercel.app/api?username=Dragonius)
   
   <br>
 
